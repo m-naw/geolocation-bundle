@@ -26,8 +26,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode    = $treeBuilder->root('meup_geo_location');
+        $treeBuilder = new TreeBuilder('meup_geo_location');
+        $rootNode    = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
